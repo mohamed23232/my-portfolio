@@ -1,7 +1,11 @@
 import leaf from "../../Assets/Projects/leaf.png";
 import emotion from "../../Assets/Projects/emotion.png";
 import editor from "../../Assets/Projects/codeEditor.png";
-import VRC from "../../Assets/Projects/VRC.jpg";
+import VRC from "../../Assets/Projects/VRC/Intro.jpg";
+import VRCCleaing from "../../Assets/Projects/VRC/Cleaning.png";
+import VRCMopping from "../../Assets/Projects/VRC/Mopping.png";
+import VRCHandCleaing from "../../Assets/Projects/VRC/hand hygene.jpg";
+import VRCVideo from "../../Assets/Projects/VRC/video.mp4";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
 
@@ -28,11 +32,9 @@ export const projectsData = [
       "Immersive hand tracking and interaction mechanics",
       "Performance optimized for Meta Quest platform"
     ],
-    technologies: ["Virtual Reality", "Unity", "C#", "Meta Quest"],
-    images: [VRC],
-    videos: [],
-    ghLink: "https://github.com/soumyajit4419/Chatify",
-    demoLink: "https://chatify-49.web.app/",
+    technologies: ["Virtual Reality", "Unity", "C#", "Meta Quest","Custom VR Interaction System", "Custom Cleaning System"],
+    images: [VRC, VRCCleaing,VRCMopping,VRCHandCleaing],
+    videos: [VRCVideo],
     isBlog: false,
   },
   {
