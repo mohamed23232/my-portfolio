@@ -8,19 +8,22 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi everyone! I’m <span className="purple">Soumyajit Behera</span>{" "}
-            from <span className="purple">Bhubaneswar, India</span>.
+            Hi everyone!
             <br />
-            I’m currently working as a{" "}
-            <span className="purple">Software Developer</span> at{" "}
-            <span className="purple">Juspay</span>.
-            <br />I hold an Integrated M.Sc. (IMSc) in{" "}
-            <span className="purple">Mathematics and Computing</span> from{" "}
-            <span className="purple">BIT Mesra</span>.
+            I’m <span className="purple">Mohamed Rabea</span>, a{" "}
+            <span className="purple">Unity Developer</span> from{" "}
+            <span className="purple">Egypt</span>.
+            <br />
+            A Computer Engineering graduate with a strong passion for{" "}
+            <span className="purple">game development</span>,{" "}
+            <span className="purple">VR development</span>,{" "}
+            <span className="purple">AI</span>, and creating interactive experiences.
+            <br />
+            I am specialized in building gameplay systems, VR/PC experiences,
+            clean architecture, and performance-friendly mechanics inside Unity.
             <br />
             <br />
-            Outside of coding, I love engaging in activities that keep me
-            creative and inspired:
+            Outside of development, I enjoy activities that keep me creative and energized:
           </p>
 
           <ul>
@@ -28,17 +31,17 @@ function AboutCard() {
               <ImPointRight /> Playing Games 🎮
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs ✍️
+              <ImPointRight /> Learning new tech & improving my skills ⚙️
             </li>
             <li className="about-activity">
-              <ImPointRight /> Traveling and Exploring New Places 🌍
+              <ImPointRight /> Creating fun ideas & game concepts ✨
             </li>
           </ul>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+          {/* <p style={{ color: "rgb(155 126 172)" }}>
+            "Great games come from passion, creativity, and curiosity."{" "}
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+          <footer className="blockquote-footer">Rabea</footer> */}
         </blockquote>
       </Card.Body>
     </Card>
