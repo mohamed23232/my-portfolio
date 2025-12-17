@@ -38,6 +38,11 @@ import CXR1 from "../../Assets/Projects/CXR/1.png"
 import CXR2 from "../../Assets/Projects/CXR/2.png"
 import CXR3 from "../../Assets/Projects/CXR/3.png"
 import CXR4 from "../../Assets/Projects/CXR/4.png"
+// XO
+import XOIntroImage from "../../Assets/Projects/XOARM/intro.png"
+import XO1 from "../../Assets/Projects/XOARM/1.png"
+import XO2 from "../../Assets/Projects/XOARM/2.png"
+import XO3 from "../../Assets/Projects/XOARM/3.png"
 
 
 
@@ -249,6 +254,42 @@ export const projectsData = [
   ],
   images: [EMS1, EMS2, EMS3, EMS4],
   videos: [EMSvideo],
+  isBlog: false,
+},
+{
+  id: "xo-arm-tiva-c",
+  title: "XO–ARM Game",
+  imgPath: XOIntroImage,
+  description: "A hardware-based Tic-Tac-Toe game implemented on a Tiva C ARM microcontroller with custom-built drivers and real-time hardware interaction.",
+  shortDescription: "Embedded XO (Tic-Tac-Toe) game on ARM Tiva C",
+  detailedDescription: `XO–ARM is an embedded systems project that implements the classic Tic-Tac-Toe (X-O) game on a TM4C123GH6PM (Tiva C) ARM microcontroller.
+  
+  The game is played by two players on a 3x3 grid using physical push buttons for input, with the game state displayed on a Nokia 5110 LCD screen. Players take turns placing their symbols (X or O), while the system updates the display in real time and checks for win or tie conditions.
+  
+  All hardware drivers, including GPIO, LCD, button handling, LEDs, and buzzer control, were implemented from scratch without relying on external libraries. The system also uses LEDs to indicate the active player and a buzzer with a warning LED to signal game-ending conditions such as wins or ties.
+  
+  This project demonstrates low-level ARM programming, direct register manipulation, and real-time interaction between software and hardware components in an embedded environment.`,
+  keyFeatures: [
+    "Classic Tic-Tac-Toe game implemented on embedded hardware",
+    "Custom-written drivers for GPIO, LCD, buttons, LEDs, and buzzer",
+    "Real-time player input using physical push buttons",
+    "Graphical game board rendered on Nokia 5110 LCD",
+    "Player turn indication using dedicated LEDs",
+    "Audio and visual alerts using buzzer and alarm LED",
+    "Low-level ARM programming with direct register access",
+    "Reliable real-time system behavior on resource-constrained hardware"
+  ],
+  technologies: [
+    "Embedded Systems",
+    "ARM Cortex-M4",
+    "TM4C123GH6PM (Tiva C)",
+    "C Programming",
+    "Bare-Metal Programming",
+    "Custom Hardware Drivers",
+    "GPIO & Peripheral Control"
+  ],
+  images: [XOIntroImage,XO3,XO1, XO2],
+  videos: [],
   isBlog: false,
 },
 {
