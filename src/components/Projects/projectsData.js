@@ -1,19 +1,124 @@
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import VRC from "../../Assets/Projects/VRC/Intro.jpg";
+//VRC 
+import VRCIntroImage from "../../Assets/Projects/VRC/Intro.jpg";
 import VRCCleaing from "../../Assets/Projects/VRC/Cleaning.png";
 import VRCMopping from "../../Assets/Projects/VRC/Mopping.png";
 import VRCHandCleaing from "../../Assets/Projects/VRC/hand hygene.jpg";
 import VRCVideo from "../../Assets/Projects/VRC/video.mp4";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+//DXB
+import DXBIntroImage from "../../Assets/Projects/DXB/DXBIntroImage.png"
+import DXBVR1 from "../../Assets/Projects/DXB/DXBVR1.png"
+import DXBVR2 from "../../Assets/Projects/DXB/DXBVR2.png"
+import DXBPC1 from "../../Assets/Projects/DXB/DXBPC1.png"
+import DXBPC2 from "../../Assets/Projects/DXB/DXBPC2.png"
+import DXBVideo from "../../Assets/Projects/DXB/video.mp4"
+// Spring's Resturant
+import SpringsIntroImage from "../../Assets/Projects/Spring's Resturant/intro.png"
+import Springs1 from "../../Assets/Projects/Spring's Resturant/inside1.png"
+import Springs2 from "../../Assets/Projects/Spring's Resturant/inside2.png"
+import Springs3 from "../../Assets/Projects/Spring's Resturant/inside3.png"
+import Springs4 from "../../Assets/Projects/Spring's Resturant/inside4.png"
+// Java Chess engine
+import ChessIntroImage from "../../Assets/Projects/Ai Chess Engine/intro.png"
+import Chess1 from "../../Assets/Projects/Ai Chess Engine/img1.png"
+import Chess2 from "../../Assets/Projects/Ai Chess Engine/img2.png"
+import Chess3 from "../../Assets/Projects/Ai Chess Engine/img3.png"
+import Chess4 from "../../Assets/Projects/Ai Chess Engine/img4.png"
+// PropHuntGame
+import GameStoryImage from "../../Assets/Projects/OutOfSight/Story.png"
+// EMS
+import EMSIntroImage from "../../Assets/Projects/EMS/intro.png"
+import EMS1 from "../../Assets/Projects/EMS/1.png"
+import EMS2 from "../../Assets/Projects/EMS/2.png"
+import EMS3 from "../../Assets/Projects/EMS/3.png"
+import EMS4 from "../../Assets/Projects/EMS/4.png"
+import EMSvideo from "../../Assets/Projects/EMS/video.mp4"
+// CXR
+import CXRIntroImage from "../../Assets/Projects/CXR/Intro.png"
+import CXR1 from "../../Assets/Projects/CXR/1.png"
+import CXR2 from "../../Assets/Projects/CXR/2.png"
+import CXR3 from "../../Assets/Projects/CXR/3.png"
+import CXR4 from "../../Assets/Projects/CXR/4.png"
+
+
+
 
 export const projectsData = [
   {
+  id: "out-of-sight",
+  title: "Out of Sight!",
+  imgPath: GameStoryImage,
+  description: "A fast-paced, chaotic multiplayer prop-hunt game that blends magical abilities, creative deception, and clip-worthy moments.",
+  shortDescription: "Chaotic multiplayer prop-hunt game with magical abilities",
+  detailedDescription: `Out of Sight! is an asymmetric multiplayer prop-hunt game designed to turn classic hide-and-seek into a fast, magical, and chaotic mind game.
+  
+  Set in a vibrant fantasy world, players take on one of two roles: clever aliens who disguise themselves as props using traps and trickery, or magical hunters equipped with elemental abilities to uncover and chase them down. Every match is built around unpredictability, creativity, and last-second escapes that naturally produce memorable and shareable moments.
+  
+  Designed for short, replayable 5–8 minute sessions, Out of Sight! emphasizes fast decision-making, ability-driven gameplay, and environmental interaction. The game is built with a strong focus on replayability, humor, and community-driven development, making each round feel like a unique story worth sharing.`,
+  keyFeatures: [
+    "Asymmetric prop-hunt gameplay with distinct roles",
+    "Ability-driven mechanics for both hunters and aliens",
+    "Magical elemental powers and trap-based deception",
+    "Short, fast-paced matches (5–8 minutes)",
+    "Highly replayable gameplay with unpredictable outcomes",
+    "Vibrant fantasy environments with interactive props",
+    "Clip-worthy moments designed for streaming and social media",
+    "Polished multiplayer experience built for party play",
+    "Creator-friendly design encouraging memes and highlights",
+    "Community-focused development with playtesting feedback loops"
+  ],
+  technologies: [
+    "Unity",
+    "C#",
+    "Multiplayer Game Architecture",
+    "Custom Ability System",
+    "Asymmetric Game Design",
+    "UI & UX Systems",
+    "Performance Optimization"
+  ],
+  images: [],
+  videos: [],
+  isBlog: false,
+},
+{
+  id: "dxb",
+  title: "DXB",
+  imgPath: DXBIntroImage,
+  description: "An immersive VR and PC-based digital twin of Dubai International Airport, designed for interactive exploration, spatial inspection, and real-time information visualization.",
+  shortDescription: "Interactive digital twin of Dubai Airport for VR, PC, and touch screens",
+  detailedDescription: `The DXB Digital Twin is a high-fidelity virtual representation of Dubai International Airport, developed to enable immersive walkthroughs, spatial understanding, and interactive data inspection across both VR and PC platforms.
+  
+  The experience allows users to explore the airport’s exterior and interior environments through a smooth, guided walkthrough system. A dynamic main menu presents the airport exterior in a rotating, interactive view, with contextual buttons positioned above key rooms and zones.
+  
+  Selecting a room instantly brings up detailed UI panels displaying relevant operational, spatial, or informational data, enabling intuitive inspection without breaking immersion. The PC version additionally supports touch-screen interaction, ensuring accessibility across kiosks, large displays, and standard desktop setups.`,
+  keyFeatures: [
+    "High-fidelity digital twin of Dubai International Airport",
+    "VR and PC versions with touch-screen support",
+    "Interactive rotating exterior main menu",
+    "Context-aware buttons positioned above rooms and zones",
+    "Instant room inspection with data-driven UI panels",
+    "Seamless exterior and interior walkthrough experience",
+    "Smooth camera transitions and focus-based navigation",
+    "Interactive UI system optimized for VR and touch input",
+    "Scalable architecture supporting future airport expansions",
+    "Performance-optimized for real-time exploration"
+  ],
+  technologies: [
+    "Virtual Reality",
+    "Unity",
+    "C#",
+    "PC & Touch Screen Interaction",
+    "Custom Camera & Navigation System",
+    "UI Toolkit / Custom UI System",
+    "Digital Twin Architecture"
+  ],
+  images: [DXBVR1, DXBVR2, DXBPC1, DXBPC2],
+  videos: [DXBVideo],
+  isBlog: false,
+},
+  {
     id: "vrc",
     title: "VRC",
-    imgPath: VRC,
+    imgPath: VRCIntroImage,
     description: "The first VR-based training system in Canada built to support pharmacy professionals in learning and perfecting sterile compounding protocols.",
     shortDescription: "VR-based training system for pharmacy professionals",
     detailedDescription: `The Virtual Interactive Cleanroom (VRC) is an innovative VR training platform that enables pharmacy professionals to strengthen their sterile compounding skills through immersive, on-demand simulations.
@@ -33,140 +138,155 @@ export const projectsData = [
       "Performance optimized for Meta Quest platform"
     ],
     technologies: ["Virtual Reality", "Unity", "C#", "Meta Quest","Custom VR Interaction System", "Custom Cleaning System"],
-    images: [VRC, VRCCleaing,VRCMopping,VRCHandCleaing],
+    images: [VRCIntroImage, VRCCleaing,VRCMopping,VRCHandCleaing],
     videos: [VRCVideo],
     isBlog: false,
   },
   {
-    id: "bits-of-code",
-    title: "Bits-0f-C0de",
-    imgPath: bitsOfCode,
-    description: "My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown.",
-    shortDescription: "Personal blog built with Next.js and Tailwind CSS",
-    detailedDescription: `Bits-0f-C0de is a modern, fully-featured blogging platform built with Next.js and Tailwind CSS.
-    
-    This project demonstrates modern web development practices and provides an elegant platform for sharing technical content.
-    
-    The platform makes it simple to write and publish blog posts while maintaining beautiful styling and excellent performance.`,
-    keyFeatures: [
-      "Markdown-based content management",
-      "Server-side rendering with Next.js",
-      "Responsive design with Tailwind CSS",
-      "Dark mode support",
-      "Fast performance and SEO optimization",
-      "Easy-to-use blog writing interface"
-    ],
-    technologies: ["Next.js", "React", "Tailwind CSS", "Markdown"],
-    images: [bitsOfCode],
-    videos: [],
-    ghLink: "https://github.com/soumyajit4419/Bits-0f-C0de",
-    demoLink: "https://blogs.soumya-jit.tech/",
-    isBlog: false,
-  },
+  id: "explainable-thoracic-diagnosis",
+  title: "XAI for Thoracic Diagnosis",
+  imgPath: CXRIntroImage,
+  description: "An explainable AI-based diagnostic system for thoracic disease detection from chest X-rays using Vision Transformers and state-of-the-art XAI techniques.",
+  shortDescription: "Explainable Vision Transformer system for chest X-ray diagnosis",
+  detailedDescription: `This graduation project presents an advanced, explainable AI system designed to assist in the diagnosis of thoracic diseases from chest X-ray images. The research addresses two critical challenges in medical AI: achieving high diagnostic accuracy and providing transparent, interpretable model decisions suitable for clinical use.
+  
+  The system leverages a Vision Transformer (ViT-Base-R50-S16-224) architecture to classify thoracic conditions including Atelectasis, Pleural Effusion, and Infiltration. Unlike traditional CNN-based approaches, the transformer-based model captures long-range spatial dependencies and subtle overlapping patterns commonly found in complex radiographs.
+  
+  A dedicated thorax-extraction preprocessing pipeline was implemented using OpenCV to isolate the lung region and reduce background noise, improving both classification performance and interpretability. The model was trained and evaluated on the NIH ChestX-ray14 dataset, achieving strong AUC scores that outperform CNN benchmarks.
+  
+  To address the black-box nature of deep learning in healthcare, multiple explainable AI (XAI) techniques were integrated and evaluated, including SHAP, LIME, GradCAM++, and Attention Rollout. Each method was analyzed in terms of interpretability quality, decision impact, and computational efficiency, demonstrating that selecting disease-aligned explainability techniques significantly enhances clinical insight and physician trust.`,
+  keyFeatures: [
+    "Vision Transformer-based thoracic disease classification",
+    "Detection of Atelectasis, Effusion, and Infiltration from CXR images",
+    "Thorax extraction preprocessing pipeline using OpenCV",
+    "Evaluation on NIH ChestX-ray14 dataset",
+    "Comprehensive explainability using SHAP, LIME, GradCAM++, and Attention Rollout",
+    "Quantitative comparison of explainability impact and processing cost",
+    "Clinically relevant performance evaluation using AUC-ROC",
+    "Improved interpretability for physician trust and validation",
+    "Designed for real-time inference and clinical workflows",
+    "Research-driven system aligned with healthcare regulations and ethics"
+  ],
+  technologies: [
+    "Deep Learning",
+    "Vision Transformers (ViT)",
+    "Python",
+    "OpenCV",
+    "Explainable AI (XAI)",
+    "SHAP",
+    "GradCAM++",
+    "Attention Rollout",
+    "Medical Image Analysis"
+  ],
+  images: [CXR1, CXR2, CXR3, CXR4],
+  videos: [],
+  isBlog: false,
+},
   {
-    id: "editor-io",
-    title: "Editor.io",
-    imgPath: editor,
-    description: "Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.",
-    shortDescription: "Online code and markdown editor with live preview",
-    detailedDescription: `Editor.io is a versatile online editor that supports both code and markdown editing with instant live preview.
-    
-    This project was built to provide developers and content creators with a lightweight, browser-based tool for coding and documentation.
-    
-    Perfect for quick prototyping, learning, and documentation writing.`,
-    keyFeatures: [
-      "HTML, CSS, and JavaScript editor with live preview",
-      "Markdown editor with GitHub Flavored Markdown support",
-      "Real-time code execution",
-      "Auto-save using Local Storage",
-      "Clean and intuitive interface",
-      "No installation required - works directly in browser"
-    ],
-    technologies: ["React", "JavaScript", "HTML/CSS"],
-    images: [editor],
-    videos: [],
-    ghLink: "https://github.com/soumyajit4419/Editor.io",
-    demoLink: "https://editor.soumya-jit.tech/",
-    isBlog: false,
-  },
-  {
-    id: "plant-ai",
-    title: "Plant AI",
-    imgPath: leaf,
-    description: "Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model.",
-    shortDescription: "AI-powered plant disease detection using deep learning",
-    detailedDescription: `Plant AI is an advanced machine learning project that uses deep learning to identify and classify plant diseases.
-    
-    This project leverages state-of-the-art computer vision techniques to help farmers and botanists identify plant health issues early.
-    
-    This model can help prevent crop losses and improve agricultural productivity.`,
-    keyFeatures: [
-      "38-class image classification model",
-      "Detection of 14 different plant types",
-      "Disease vs. healthy leaf classification",
-      "98% accuracy using ResNet34",
-      "Transfer learning implementation",
-      "Web interface for easy use"
-    ],
-    technologies: ["Python", "PyTorch", "CNN", "Transfer Learning", "OpenCV"],
-    images: [leaf],
-    videos: [],
-    ghLink: "https://github.com/soumyajit4419/Plant_AI",
-    demoLink: "https://plant49-ai.herokuapp.com/",
-    isBlog: false,
-  },
-  {
-    id: "ai-for-social-good",
-    title: "Ai For Social Good",
-    imgPath: suicide,
-    description: "Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace and thus helping in sucide prevention.",
-    shortDescription: "NLP-based suicide prevention tool",
-    detailedDescription: `AI For Social Good is a meaningful project that uses Natural Language Processing to detect suicide-related posts and ideation on social media platforms.
-    
-    This tool aims to help identify individuals in crisis and facilitate timely intervention.
-    
-    This project demonstrates how AI can be used for positive social impact and potentially save lives.`,
-    keyFeatures: [
-      "NLP-based text analysis",
-      "Detection of suicide-related content",
-      "Ideation identification",
-      "Social media monitoring",
-      "Real-time alerts",
-      "Privacy-respecting design"
-    ],
-    technologies: ["Python", "NLP", "Machine Learning", "TensorFlow"],
-    images: [suicide],
-    videos: [],
-    ghLink: "https://github.com/soumyajit4419/AI_For_Social_Good",
-    demoLink: null,
-    isBlog: false,
-  },
-  {
-    id: "face-emotion-detection",
-    title: "Face Recognition and Emotion Detection",
-    imgPath: emotion,
-    description: "Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%. Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person.",
-    shortDescription: "Real-time emotion detection from facial expressions",
-    detailedDescription: `Face Recognition and Emotion Detection is a computer vision project that combines face detection with emotion classification.
-    
-    This system can analyze images or video feeds to identify faces and determine the emotional state of individuals.`,
-    keyFeatures: [
-      "Real-time face detection using OpenCV",
-      "Emotion classification (happy, sad, angry, etc.)",
-      "Support for multiple faces in single image",
-      "Video stream processing",
-      "Visual feedback and annotations",
-      "60.1% accuracy with CNN model"
-    ],
-    technologies: ["Python", "Keras", "TensorFlow", "OpenCV", "CNN"],
-    images: [emotion],
-    videos: [],
-    ghLink: "https://github.com/soumyajit4419/Face_And_Emotion_Detection",
-    demoLink: null,
-    isBlog: false,
-  },
+  id: "ai-chess-engine",
+  title: "AI Chess Engine",
+  imgPath: ChessIntroImage,
+  description: "A customizable AI-powered chess engine built with Java, applying OOP best practices and a Minimax-based decision-making system.",
+  shortDescription: "Java-based AI chess engine using Minimax",
+  detailedDescription: `This project is a fully functional AI chess engine developed using Java with a strong focus on object-oriented design principles and clean architecture.
+  
+  The engine uses a Minimax algorithm to evaluate game states and make strategic decisions, allowing the AI to simulate future moves and choose optimal plays. The chess system itself is highly customizable, enabling flexible configurations of rules, pieces, and board behavior.
+  
+  Special attention was given to applying OOP best practices such as encapsulation, abstraction, inheritance, and separation of concerns, resulting in a maintainable, extensible, and testable codebase. Guava was used to support utility operations and improve code readability and performance.`,
+  keyFeatures: [
+    "AI opponent powered by the Minimax decision-making algorithm",
+    "Customizable chess rules and game configurations",
+    "Well-structured object-oriented architecture",
+    "Clear separation between game logic, AI logic, and rendering",
+    "Extensible design allowing future AI or rule enhancements",
+    "Efficient game state evaluation and move generation",
+    "Use of Guava utilities for cleaner and safer code",
+    "Readable, maintainable, and scalable codebase",
+  ],
+  technologies: [
+    "Java",
+    "Object-Oriented Programming (OOP)",
+    "Minimax Algorithm",
+    "Guava",
+    "AI Game Logic",
+    "Software Design Patterns"
+  ],
+  images: [Chess1, Chess2, Chess3,Chess4],
+  videos: [],
+  isBlog: false,
+},
+{
+  id: "educational-management-system",
+  title: "Educational Management System",
+  imgPath: EMSIntroImage,
+  description: "A full-stack educational management system built with Node.js following the MVC architecture, designed to manage users, subjects, assignments, and submissions.",
+  shortDescription: "MVC-based educational management system using Node.js",
+  detailedDescription: `This project is a complete Educational Management System developed using Node.js and structured around the MVC (Model–View–Controller) architectural pattern to ensure scalability, clarity, and maintainability.
+  
+  The system supports multiple user roles including administrators, teachers, and students. Administrators can manage subjects, teachers, and overall system structure, while teachers can create, edit, and manage assignments. Students can view assignments, submit their work, and track their submissions through a clean and intuitive interface.
+  
+  Server-side rendering is handled using EJS, allowing dynamic views and seamless integration between backend logic and front-end presentation. The project emphasizes clean routing, modular models, proper separation of concerns, and real-world academic workflows.`,
+  keyFeatures: [
+    "MVC architecture with clear separation of concerns",
+    "Role-based system (Admin, Teacher, Student)",
+    "Authentication and authorization workflows",
+    "Subject creation and management by administrators",
+    "Assignment creation, editing, and viewing by teachers",
+    "Student assignment submissions and tracking",
+    "Dynamic server-side rendered views using EJS",
+    "Modular model structure for scalability and maintainability",
+    "Structured routing for assignments, subjects, users, and auth",
+    "Error handling and validation mechanisms"
+  ],
+  technologies: [
+    "Node.js",
+    "Express.js",
+    "MVC Architecture",
+    "EJS",
+    "JavaScript",
+    "RESTful Routing",
+    "Server-Side Rendering"
+  ],
+  images: [EMS1, EMS2, EMS3, EMS4],
+  videos: [EMSvideo],
+  isBlog: false,
+},
+{
+  id: "springs-restaurant",
+  title: "Spring’s Restaurant",
+  imgPath: SpringsIntroImage,
+  description: "A modern, animated restaurant website designed to deliver a smooth food ordering and browsing experience with a strong visual identity.",
+  shortDescription: "Modern restaurant website with online ordering and animations",
+  detailedDescription: `Spring’s Restaurant is a fully responsive, front-end web project designed to showcase a restaurant’s brand, menu, and services through an elegant and interactive user experience.
+  
+  The website allows users to explore the restaurant’s story, browse the food menu, view a curated gallery, and place food orders through an intuitive ordering flow. A carefully crafted color palette, smooth animations, and well-structured architecture work together to create a visually appealing and user-friendly experience.
+  
+  Built with clean HTML, modular SCSS, and JavaScript, the project focuses on performance, maintainability, and accessibility, ensuring a seamless experience across devices and screen sizes.`,
+  keyFeatures: [
+    "Online food ordering system with intuitive user flow",
+    "Interactive and animated user interface",
+    "Responsive design for desktop, tablet, and mobile",
+    "Restaurant menu with clear categorization",
+    "Image gallery showcasing dishes and ambiance",
+    "About section highlighting the restaurant’s identity",
+    "Location and contact information section",
+    "Smooth page transitions and UI animations",
+    "Consistent color palette and modern visual design",
+    "Well-structured and maintainable front-end architecture"
+  ],
+  technologies: [
+    "HTML5",
+    "SCSS",
+    "JavaScript",
+    "Responsive Web Design",
+    "CSS Animations",
+    "Front-End Architecture"
+  ],
+  images: [Springs1, Springs2, Springs3, Springs4],
+  videos: [],
+  isBlog: false,
+}
 ];
-
 export const getProjectById = (id) => {
   return projectsData.find((project) => project.id === id);
 };
