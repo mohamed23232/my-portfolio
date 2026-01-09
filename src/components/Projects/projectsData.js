@@ -23,7 +23,7 @@ import Chess1 from "../../Assets/Projects/Ai Chess Engine/img1.png"
 import Chess2 from "../../Assets/Projects/Ai Chess Engine/img2.png"
 import Chess3 from "../../Assets/Projects/Ai Chess Engine/img3.png"
 import Chess4 from "../../Assets/Projects/Ai Chess Engine/img4.png"
-// PropHuntGame
+// OutOfSight Game
 import GameStoryImage from "../../Assets/Projects/OutOfSight/Story.png"
 // EMS
 import EMSIntroImage from "../../Assets/Projects/EMS/intro.png"
@@ -49,36 +49,32 @@ import XO3 from "../../Assets/Projects/XOARM/3.png"
 
 export const projectsData = [
   {
-  id: "out-of-sight",
-  title: "Out of Sight!",
+  id: "call-of-seeds",
+  title: "Call of Seeds",
   imgPath: GameStoryImage,
-  description: "A fast-paced, chaotic multiplayer prop-hunt game that blends magical abilities, creative deception, and clip-worthy moments.",
-  shortDescription: "Chaotic multiplayer prop-hunt game with magical abilities",
-  detailedDescription: `Out of Sight! is an asymmetric multiplayer prop-hunt game designed to turn classic hide-and-seek into a fast, magical, and chaotic mind game.
+  description: "A single-player wave-based survival game where you defend against relentless alien attacks to unlock new levels.",
+  shortDescription: "Single-player survival game fighting waves of alien attacks",
+  detailedDescription: `Call of Seeds is an intense single-player experience that challenges you to withstand increasingly difficult waves of alien enemies. 
+
+  Spawning into hostile environments, you must use your skills to survive incoming attacks. The game features a structured wave system where clearing all enemies is the only key to victory and progression. Surviving a level unlocks the ability to move forward to the next challenge.
   
-  Set in a vibrant fantasy world, players take on one of two roles: clever aliens who disguise themselves as props using traps and trickery, or magical hunters equipped with elemental abilities to uncover and chase them down. Every match is built around unpredictability, creativity, and last-second escapes that naturally produce memorable and shareable moments.
-  
-  Designed for short, replayable 5–8 minute sessions, Out of Sight! emphasizes fast decision-making, ability-driven gameplay, and environmental interaction. The game is built with a strong focus on replayability, humor, and community-driven development, making each round feel like a unique story worth sharing.`,
+  The project highlights a robust Enemy AI system that drives the alien behaviors, a comprehensive Level Selection system for navigation between different stages, and a polished Home UI for a seamless user experience. It combines fast-paced combat with strategic survival elements.`,
   keyFeatures: [
-    "Asymmetric prop-hunt gameplay with distinct roles",
-    "Ability-driven mechanics for both hunters and aliens",
-    "Magical elemental powers and trap-based deception",
-    "Short, fast-paced matches (5–8 minutes)",
-    "Highly replayable gameplay with unpredictable outcomes",
-    "Vibrant fantasy environments with interactive props",
-    "Clip-worthy moments designed for streaming and social media",
-    "Polished multiplayer experience built for party play",
-    "Creator-friendly design encouraging memes and highlights",
-    "Community-focused development with playtesting feedback loops"
+    "Single-player wave-based survival gameplay",
+    "Intelligent Enemy AI system with attacking and Detection behaviors",
+    "Dynamic Level Selection system for progression",
+    "Responsive Home UI and Menu screens",
+    "Challenging wave mechanics with unlockable levels",
+    "Strategic combat requiring player endurance",
+    "Scalable system architecture for waves and spawning"
   ],
   technologies: [
     "Unity",
     "C#",
-    "Multiplayer Game Architecture",
-    "Custom Ability System",
-    "Asymmetric Game Design",
-    "UI & UX Systems",
-    "Performance Optimization"
+    "Navigation Systems",
+    "UI/UX Implementation",
+    "Level Management",
+    "Game State Management"
   ],
   images: [],
   videos: [],

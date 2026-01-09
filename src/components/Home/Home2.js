@@ -13,13 +13,15 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-            I am a Junior Unity Developer experienced in PC and VR with a Computer Engineering background, passionate about creating engaging and polished gameplay experiences.
-            I specialize in <b className="purple">Unity (2D & 3D)</b>, <b className="purple">C#</b>, and writing clean, maintainable code using solid OOP principles and design patterns.
-            I also have experience with <b className="purple">gameplay programming</b>, <b className="purple">AI basics</b>, and using tools that support smooth development workflows.
-            <br />
-            <br />
-            I enjoy building interactive systems, optimizing player experiences, and continuously improving my craft as a game developer.
+              I’m a <b className="purple">Junior Unity Developer</b> with a Computer Engineering background,
+              experienced in building <b className="purple">PC & VR</b> gameplay experiences.
+              <br />
+              I specialize in <b className="purple">Unity (2D & 3D)</b>, <b className="purple">C#</b>,
+              and writing clean, maintainable code using solid OOP principles.
+              <br />
+              Passionate about gameplay systems, player experience, and continuous improvement.
             </p>
+
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>

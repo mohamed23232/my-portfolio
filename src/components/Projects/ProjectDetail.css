@@ -149,12 +149,13 @@
   box-shadow: 0 10px 30px rgba(199, 112, 240, 0.3);
   transition: all 0.3s ease;
   object-fit: cover;
-  max-height: 500px;
+  max-height: 100%;
 }
 
 .project-detail-image:hover {
   transform: scale(1.02);
   box-shadow: 0 15px 40px rgba(199, 112, 240, 0.5);
+
 }
 
 /* Description Section */

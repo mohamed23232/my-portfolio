@@ -1,4 +1,3 @@
-import React from "react";
 import Typewriter from "typewriter-effect";
 
 function Type() {
@@ -8,11 +7,11 @@ function Type() {
         strings: [
           "A Unity Developer",
           "A VR Developer",
-          "A Game Enthusiast",
+          "A Software Engineer",
         ],
         autoStart: true,
         loop: true,
-        deleteSpeed: 50,
+        deleteSpeed: 10,
       }}
     />
   );
