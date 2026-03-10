@@ -23,8 +23,13 @@ import Chess1 from "../../Assets/Projects/Ai Chess Engine/img1.png"
 import Chess2 from "../../Assets/Projects/Ai Chess Engine/img2.png"
 import Chess3 from "../../Assets/Projects/Ai Chess Engine/img3.png"
 import Chess4 from "../../Assets/Projects/Ai Chess Engine/img4.png"
-// OutOfSight Game
-import GameStoryImage from "../../Assets/Projects/OutOfSight/Story.png"
+// Fruithalla Game
+import GameStoryImage from "../../Assets/Projects/Fruithalla/Story.png"
+import GameplayVideo from "../../Assets/Projects/Fruithalla/Gameplay2.mp4"
+import GameplayImage1 from "../../Assets/Projects/Fruithalla/Gameplay1.png"
+import GameplayImage2 from "../../Assets/Projects/Fruithalla/Gameplay2.png"
+import LevelsImage from "../../Assets/Projects/Fruithalla/Levels.png"
+import MainMenuImage from "../../Assets/Projects/Fruithalla/MainMenu.png"
 // EMS
 import EMSIntroImage from "../../Assets/Projects/EMS/intro.png"
 import EMS1 from "../../Assets/Projects/EMS/1.png"
@@ -49,35 +54,43 @@ import XO3 from "../../Assets/Projects/XOARM/3.png"
 
 export const projectsData = [
   {
-  id: "call-of-seeds",
-  title: "Call of Seeds",
-  imgPath: GameStoryImage,
-  description: "A single-player wave-based survival game where you defend against relentless alien attacks to unlock new levels.",
-  shortDescription: "Single-player survival game fighting waves of alien attacks",
-  detailedDescription: `Call of Seeds is an intense single-player experience that challenges you to withstand increasingly difficult waves of alien enemies. 
-
-  Spawning into hostile environments, you must use your skills to survive incoming attacks. The game features a structured wave system where clearing all enemies is the only key to victory and progression. Surviving a level unlocks the ability to move forward to the next challenge.
+  id: "Fruithalla",
+  title: "FRUITHALLA",
+  imgPath: MainMenuImage,
+  description: "An intense single-player wave-based survival shooter where you fight against relentless enemy waves across multiple challenging levels.",
+  shortDescription: "Single-player wave-based survival shooter with strategic combat and progression",
+  detailedDescription: `Fruithalla is an action-packed single-player survival experience that challenges players to withstand increasingly difficult waves of enemies across multiple combat arenas.
+  Players spawn into hostile environments armed with a dynamic weapon system, facing waves of intelligent AI enemies. Success requires strategic thinking, precise aiming, and survival skills as enemies attack with various behaviors and patterns. Each wave must be completely cleared to progress, with the game tracking your kills and unlocking new levels as you prove your combat prowess.
   
-  The project highlights a robust Enemy AI system that drives the alien behaviors, a comprehensive Level Selection system for navigation between different stages, and a polished Home UI for a seamless user experience. It combines fast-paced combat with strategic survival elements.`,
+  The project showcases a sophisticated Enemy AI System featuring state machine-based behaviors with detection, pursuit, and attack patterns. A robust Wave Control System manages enemy spawning, wave progression, and difficulty scaling. The game features a comprehensive Level Selection System with unlock progression saved to the cloud, ensuring your progress is never lost. Players can choose from multiple weapons and power-ups to customize their playstyle, all wrapped in a polished UI with responsive menus, HUD feedback, and visual effects.`,
   keyFeatures: [
-    "Single-player wave-based survival gameplay",
-    "Intelligent Enemy AI system with attacking and Detection behaviors",
-    "Dynamic Level Selection system for progression",
-    "Responsive Home UI and Menu screens",
-    "Challenging wave mechanics with unlockable levels",
-    "Strategic combat requiring player endurance",
-    "Scalable system architecture for waves and spawning"
+    "Wave-based survival gameplay with progressive difficulty",
+    "Advanced Enemy AI with state machine behaviors (Detection, Chase, Attack)",
+    "Multiple attack strategies including melee and ranged combat",
+    "Dynamic Wave Spawn System with configurable enemy compositions",
+    "Comprehensive Weapon System with projectile mechanics and shooting events",
+    "Power-up Selection System for strategic gameplay enhancement",
+    "Cloud Save System with authentication for persistent progression",
+    "Interactive Level Selection with unlock progression mechanics",
+    "Real-time HUD and Feedback Systems for combat awareness",
+    "Polished VFX System with pooling and visual feedback",
+    "Responsive player controls with kinematic movement and camera control",
+    "Audio System with dynamic sound effects and music",
+    "Multiple UI screens (Main Menu, Pause, How to Play, Level Selection)"
   ],
   technologies: [
     "Unity",
     "C#",
-    "Navigation Systems",
-    "UI/UX Implementation",
-    "Level Management",
-    "Game State Management"
+    "Reflex Framework",
+    "Custom Event Channels",
+    "UniTask",
+    "Cloud Save Integration",
+    "Unity Authentication System",
+    "Data Management",
+    "SOLID Principles & Design Patterns",
   ],
-  images: [],
-  videos: [],
+  images: [MainMenuImage,GameplayImage1, LevelsImage, GameStoryImage],
+  videos: [GameplayVideo],
   isBlog: false,
 },
 {
@@ -86,11 +99,11 @@ export const projectsData = [
   imgPath: DXBIntroImage,
   description: "An immersive VR and PC-based digital twin of Dubai International Airport, designed for interactive exploration, spatial inspection, and real-time information visualization.",
   shortDescription: "Interactive digital twin of Dubai Airport for VR, PC, and touch screens",
-  detailedDescription: `The DXB Digital Twin is a high-fidelity virtual representation of Dubai International Airport, developed to enable immersive walkthroughs, spatial understanding, and interactive data inspection across both VR and PC platforms.
-  
-  The experience allows users to explore the airport’s exterior and interior environments through a smooth, guided walkthrough system. A dynamic main menu presents the airport exterior in a rotating, interactive view, with contextual buttons positioned above key rooms and zones.
-  
-  Selecting a room instantly brings up detailed UI panels displaying relevant operational, spatial, or informational data, enabling intuitive inspection without breaking immersion. The PC version additionally supports touch-screen interaction, ensuring accessibility across kiosks, large displays, and standard desktop setups.`,
+  detailedDescription: `The Digital Twin project is a high-fidelity virtual representation of a major international airport, developed to enable immersive walkthroughs, spatial understanding, and interactive data inspection across both VR and PC platforms.
+  The experience allows users to explore exterior and interior environments through a smooth, guided walkthrough system. 
+  A dynamic main menu presents the airport exterior in a rotating interactive view, with contextual buttons positioned above key rooms and zones.
+  Selecting a room brings up detailed UI panels displaying relevant operational and spatial information, enabling intuitive inspection without breaking immersion.
+  The PC version additionally supports touch-screen interaction, ensuring accessibility across kiosks, large displays, and standard desktop setups.`,
   keyFeatures: [
     "High-fidelity digital twin of Dubai International Airport",
     "VR and PC versions with touch-screen support",
@@ -112,8 +125,8 @@ export const projectsData = [
     "UI Toolkit / Custom UI System",
     "Digital Twin Architecture"
   ],
-  images: [DXBVR1, DXBVR2, DXBPC1, DXBPC2],
-  videos: [DXBVideo],
+  images: [DXBIntroImage, DXBVR2],
+  videos: [],
   isBlog: false,
 },
   {

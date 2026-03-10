@@ -13,7 +13,7 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I’m a <b className="purple">Junior Unity Developer</b> with a Computer Engineering background,
+              I’m a <b className="purple">Mid-Level Unity Developer</b> with a Computer Engineering background,
               experienced in building <b className="purple">PC & VR</b> gameplay experiences.
               <br />
               I specialize in <b className="purple">Unity (2D & 3D)</b>, <b className="purple">C#</b>,
