@@ -48,11 +48,82 @@ import XOIntroImage from "../../Assets/Projects/XOARM/intro.png"
 import XO1 from "../../Assets/Projects/XOARM/1.png"
 import XO2 from "../../Assets/Projects/XOARM/2.png"
 import XO3 from "../../Assets/Projects/XOARM/3.png"
+// Ship Simulation
+import ShipIntroImage from "../../Assets/Projects/Ship simulation/intro.png"
+
+// Crisis Simulation
+import CrisisIntroImage from "../../Assets/Projects/Crisis Simulation/intro.png"
 
 
 
 
 export const projectsData = [
+  {
+  id: "Maritime-Training-Simulation",
+  title: "Maritime Training Simulation",
+  imgPath: ShipIntroImage,
+  description: "A real-time ship simulation platform designed for immersive training and interactive scenario-based experiences.",
+  shortDescription: "Real-time maritime training simulator with VR and PC support",
+  detailedDescription: `The Maritime Training Simulation is a comprehensive, real-time platform providing immersive training experiences for maritime professionals across VR. The platform features authentic vessel controls, dynamic scenarios, and live operational data monitoring through immersive in-world interfaces.
+
+  A sophisticated telemetry visualization system provides real-time feedback on vessel movement, environmental conditions, and simulation state. The modular scoring framework assesses performance with structured feedback based on configurable objectives. Supporting VR interaction. the platform prioritizes immersion, usability, scalability, and performance.`,
+  keyFeatures: [
+    "Interactive vessel controls (wheel steering, throttle, bow thruster)",
+    "Real-time telemetry visualization and operational data display",
+    "Modular objective, quiz, and scoring system",
+    "Sonar and radar system integration for enhanced situational awareness",
+    "Scenario-driven training exercises with performance assessment",
+    "VR interactions implemented with Meta XR All-in-One SDK",
+    "Modular audio system with contextual sound design",
+    "In-game UI optimized for VR",
+  ],
+  technologies: [
+    "Unity",
+    "C#",
+    "Meta XR All-in-One SDK",
+    "UI/UX for Virtual Reality",
+    "Physics-Based Simulation",
+  ],
+  images: [],
+  videos: [],
+  isBlog: false,
+},
+ {
+  id: "crisis-simulation",
+  title: "Crisis Simulation",
+  imgPath: CrisisIntroImage,
+  description: "A VR platform for immersive crisis scenario training with guided emergency procedures and interactive walkthroughs.",
+  shortDescription: "VR-based crisis scenario training with guided emergency response procedures",
+  detailedDescription: `The Crisis Simulation is a comprehensive VR training experience designed to immerse participants in realistic emergency scenarios within large-scale facility environments. The platform guides users through critical emergency procedures using step-by-step walkthroughs, demonstrating the correct actions to take during high-pressure situations while maintaining active engagement through hands-on interactions.
+  
+  Users progress through scenario modules that unfold sequentially, with guided narration and visual cues directing them through the environment. The experience emphasizes decision-making in crisis situations, with interactive checkpoints that reinforce key procedural moments and enhance learning outcomes.
+  
+  A built-in assessment system evaluates comprehension and response accuracy throughout the experience, providing structured feedback on user performance. The platform features a compass-based navigation system optimized for large environments, ensuring users maintain spatial orientation while progressing through complex scenarios.
+  
+  The modular architecture supports flexible scenario and objective management, allowing for customization and extension of training content. The system combines immersive VR interaction, realistic environmental design, and pedagogical assessment to create an effective, engaging training platform for emergency preparedness and response.`,
+  keyFeatures: [
+    "Realistic crisis scenarios within large-scale facility environments",
+    "Step-by-step interactive guided walkthroughs for emergency procedures",
+    "Sequential scenario modules with managed progression and state flow",
+    "Guided narration and visual cues directing users through scenarios",
+    "Integrated assessment system with quizzes and ordering-based evaluations",
+    "Compass-based navigation system for large environment orientation",
+    "Real-time performance feedback and comprehension evaluation",
+    "Hands-on interactive training mechanics for active engagement",
+    "Modular architecture for flexible scenario and objective management",
+  ],
+  technologies: [
+    "Unity",
+    "C#",
+    "Meta XR All-in-One SDK",
+    "Scenario Management System",
+    "UI/UX for VR",
+    "Narration",
+  ],
+  images: [],
+  videos: [],
+  isBlog: false,
+},
   {
   id: "Fruithalla",
   title: "FRUITHALLA",
@@ -94,35 +165,33 @@ export const projectsData = [
   isBlog: false,
 },
 {
-  id: "dxb",
-  title: "DXB",
+  id: "infrastructure-digital-twin",
+  title: "Infrastructure Digital Twin",
   imgPath: DXBIntroImage,
-  description: "An immersive VR and PC-based digital twin of Dubai International Airport, designed for interactive exploration, spatial inspection, and real-time information visualization.",
-  shortDescription: "Interactive digital twin of Dubai Airport for VR, PC, and touch screens",
-  detailedDescription: `The Digital Twin project is a high-fidelity virtual representation of a major international airport, developed to enable immersive walkthroughs, spatial understanding, and interactive data inspection across both VR and PC platforms.
-  The experience allows users to explore exterior and interior environments through a smooth, guided walkthrough system. 
-  A dynamic main menu presents the airport exterior in a rotating interactive view, with contextual buttons positioned above key rooms and zones.
-  Selecting a room brings up detailed UI panels displaying relevant operational and spatial information, enabling intuitive inspection without breaking immersion.
-  The PC version additionally supports touch-screen interaction, ensuring accessibility across kiosks, large displays, and standard desktop setups.`,
+  description: "An immersive VR and PC-based digital twin designed for interactive exploration, spatial inspection, and real-time information visualization of large-scale infrastructure.",
+  shortDescription: "Interactive digital twin for VR and PC with touch-screen support",
+  detailedDescription: `The Infrastructure Digital Twin project is a high-fidelity virtual representation of a large-scale facility, developed to enable immersive walkthroughs, spatial understanding, and interactive data inspection across both VR and PC platforms. The experience allows users to explore different environments through a smooth, guided walkthrough system.
+  
+  A dynamic interactive interface presents the environment with rotating views and contextual navigation. Users can inspect detailed sections with data-driven information panels without breaking immersion. The PC version supports touch-screen interaction, ensuring accessibility across kiosks and large displays. Built with a scalable architecture optimized for real-time exploration and performance.`,
   keyFeatures: [
-    "High-fidelity digital twin of Dubai International Airport",
+    "High-fidelity digital twin of large-scale infrastructure",
     "VR and PC versions with touch-screen support",
-    "Interactive rotating exterior main menu",
-    "Context-aware buttons positioned above rooms and zones",
-    "Instant room inspection with data-driven UI panels",
-    "Seamless exterior and interior walkthrough experience",
-    "Smooth camera transitions and focus-based navigation",
+    "Interactive navigation system",
+    "Context-aware information display",
+    "Data-driven UI panels for detailed inspection",
+    "Seamless multi-environment exploration",
+    "Smooth camera transitions and intuitive navigation",
     "Interactive UI system optimized for VR and touch input",
-    "Scalable architecture supporting future airport expansions",
-    "Performance-optimized for real-time exploration"
+    "Scalable architecture",
+    "Performance-optimized for real-time rendering"
   ],
   technologies: [
     "Virtual Reality",
     "Unity",
     "C#",
-    "PC & Touch Screen Interaction",
-    "Custom Camera & Navigation System",
-    "UI Toolkit / Custom UI System",
+    "VR & Touch Screen Interaction",
+    "Custom Navigation System",
+    "UI/UX Design",
     "Digital Twin Architecture"
   ],
   images: [DXBIntroImage, DXBVR2],
@@ -130,28 +199,27 @@ export const projectsData = [
   isBlog: false,
 },
   {
-    id: "vrc",
-    title: "VRC",
+    id: "sterile-environment-training",
+    title: "Sterile Environment VR Training",
     imgPath: VRCIntroImage,
-    description: "The first VR-based training system in Canada built to support pharmacy professionals in learning and perfecting sterile compounding protocols.",
-    shortDescription: "VR-based training system for pharmacy professionals",
-    detailedDescription: `The Virtual Interactive Cleanroom (VRC) is an innovative VR training platform that enables pharmacy professionals to strengthen their sterile compounding skills through immersive, on-demand simulations.
-    As the first solution of its kind in Canada, it tackles the growing need for consistent compliance and hands-on competency in hospital and compounding pharmacy environments.
-    Through realistic virtual scenarios, pharmacists and technicians can practice essential procedures—such as garbing, hand hygiene, and laminar flow hood cleaning—while receiving real-time feedback to ensure accurate and protocol-aligned performance.`,
+    description: "An innovative VR training platform designed for sterile environment protocol training through immersive, hands-on simulations.",
+    shortDescription: "VR-based training system for sterile procedure protocols",
+    detailedDescription: `The Sterile Environment Training platform is an immersive VR training experience that enables users to practice critical sterile procedures through realistic virtual scenarios. The platform guides users through essential protocols and procedures with real-time feedback to ensure accurate and compliant performance.
+    
+    Users engage in hands-on interactions within a controlled virtual environment, progressing through sequential training modules. The experience emphasizes procedural accuracy with interactive checkpoints and comprehensive assessment systems. Built for accessibility and performance optimization across VR platforms.`,
     keyFeatures: [
-      "Realistic virtual cleanroom environment with pharmaceutical standards compliance",
-      "Complete garbing simulation with proper donning procedures",
-      "Hand hygiene training with step-by-step protocols",
-      "Physical object simulation with realistic physics (mops, tissues, tools)",
-      "Hand washing simulation with proper technique validation",
-      "PPE simulation with correct wearing procedures",
-      "Real-time feedback system ensuring protocol compliance",
-      "Dynamic cleaning system working on any surface with any tool",
-      "Modular objectives system orchestrating interactions and steps",
+      "Realistic virtual sterile environment simulation",
+      "Complete procedure simulation with step-by-step guidance",
+      "Protocol training with real-time validation",
+      "Physical object simulation with realistic physics",
+      "Comprehensive feedback system ensuring compliance",
+      "Dynamic interactive training mechanics",
+      "Modular training objectives orchestrating procedure steps",
       "Immersive hand tracking and interaction mechanics",
-      "Performance optimized for Meta Quest platform"
+      "Performance optimized for VR platforms",
+      "Scalable architecture supporting multiple procedure types"
     ],
-    technologies: ["Virtual Reality", "Unity", "C#", "Meta Quest","Custom VR Interaction System", "Custom Cleaning System"],
+    technologies: ["Virtual Reality", "Unity", "C#", "VR Interactions", "Custom Training Systems", "Hand Tracking"],
     images: [VRCIntroImage, VRCCleaing,VRCMopping,VRCHandCleaing],
     videos: [VRCVideo],
     isBlog: false,
