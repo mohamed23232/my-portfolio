@@ -618,6 +618,90 @@ button:focus {
     padding-top: 0 !important;
   }
 }
+
+.experience-timeline {
+  position: relative !important;
+  max-width: 1000px !important;
+  margin: 30px auto 10px auto !important;
+  padding-left: 30px !important;
+}
+
+.experience-timeline::before {
+  content: "" !important;
+  position: absolute !important;
+  left: 8px !important;
+  top: 8px !important;
+  bottom: 8px !important;
+  width: 2px !important;
+  background: rgba(199, 112, 240, 0.35) !important;
+}
+
+.experience-item {
+  position: relative !important;
+  padding-bottom: 35px !important;
+}
+
+.experience-item:last-child {
+  padding-bottom: 0 !important;
+}
+
+.experience-marker {
+  position: absolute !important;
+  left: -30px !important;
+  top: 6px !important;
+}
+
+.experience-dot {
+  width: 16px !important;
+  height: 16px !important;
+  border-radius: 50% !important;
+  background-color: var(--imp-text-color) !important;
+  box-shadow: 0 0 0 4px rgba(199, 112, 240, 0.25) !important;
+}
+
+.experience-card {
+  text-align: left !important;
+  background-color: rgba(255, 255, 255, 0.03) !important;
+  border: 1px solid rgba(199, 112, 240, 0.25) !important;
+  border-radius: 12px !important;
+  padding: 18px 22px !important;
+  transition: all 0.3s ease 0s !important;
+}
+
+.experience-card:hover {
+  border-color: rgba(199, 112, 240, 0.6) !important;
+  transform: translateX(4px) !important;
+}
+
+.experience-role {
+  color: white !important;
+  font-size: 1.3em !important;
+  font-weight: 600 !important;
+  margin-bottom: 4px !important;
+}
+
+.experience-company {
+  color: var(--imp-text-color) !important;
+  font-size: 1.05em !important;
+  margin-bottom: 10px !important;
+}
+
+.experience-period {
+  color: rgb(155 126 172) !important;
+  font-weight: 400 !important;
+}
+
+.experience-bullets {
+  color: white !important;
+  opacity: 0.85 !important;
+  padding-left: 20px !important;
+  margin-bottom: 0 !important;
+}
+
+.experience-bullets li {
+  margin-bottom: 6px !important;
+}
+
 /* --------- */
 /* Resume */
 /* --------- */
