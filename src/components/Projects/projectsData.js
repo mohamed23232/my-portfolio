@@ -54,10 +54,75 @@ import ShipIntroImage from "../../Assets/Projects/Ship simulation/intro.png"
 // Crisis Simulation
 import CrisisIntroImage from "../../Assets/Projects/Crisis Simulation/intro.png"
 
+// Compass Navigation Simulation
+import CompassIntroImage from "../../Assets/Projects/Compass Navigation Simulation/intro.svg"
+
+// Roz Blaban
+import RozBlabanIntro from "../../Assets/Projects/Roz Blaban/intro.png"
+import RozBlabanAwake from "../../Assets/Projects/Roz Blaban/AwakeMode.png"
+import RozBlabanSleep from "../../Assets/Projects/Roz Blaban/SleepMode.png"
+
 
 
 
 export const projectsData = [
+  {
+  id: "roz-blaban",
+  title: "Roz Blaban",
+  imgPath: RozBlabanIntro,
+  description: "A 2D puzzle platformer following Sarhan, an anxious university student who must cross a dreamlike cityscape to get home to bed by switching between awake and asleep states.",
+  shortDescription: "2D puzzle platformer where switching between awake and asleep reveals different paths",
+  detailedDescription: `Roz Blaban is a hand-drawn, sketchbook-styled 2D puzzle platformer built around Sarhan, a university student battling anxiety after a long day, whose only goal is to make it home and into bed.
+
+  The core mechanic lets Sarhan switch between an awake state and an asleep state at will. Each state reshapes the level: platforms, obstacles, and paths that exist in one state are hidden or altered in the other, and the environment's lighting shifts between a grounded daytime look and a dreamlike night. Neither state alone is enough to reach the end of a level; players must read both layers of the level and swap between them at the right moments to piece together a path home.
+
+  The game was developed with a small team, pairing a distinctive sketch-style art direction with level design built entirely around the dual-state mechanic to reflect Sarhan's anxious, dreamlike state of mind.`,
+  keyFeatures: [
+    "Modular Character controller system",
+    "Awake/asleep state-switching as the core puzzle-platforming mechanic",
+    "Levels with platforms and paths that differ between the two states",
+    "Hand-drawn, sketchbook-style art direction and UI",
+    "Star-based collectible and level-completion system",
+  ],
+  technologies: [
+    "Unity",
+    "C#",
+    "2D Platformer Mechanics",
+    "Level Design",
+  ],
+  images: [RozBlabanAwake, RozBlabanSleep],
+  videos: [],
+  isBlog: false,
+},  
+  {
+  id: "compass-navigation-simulation",
+  title: "Compass Navigation Simulation",
+  imgPath: CompassIntroImage,
+  description: "A VR wayfinding simulation where users navigate from a starting point to a destination using only a physical compass and a map.",
+  shortDescription: "VR navigation trainer using compass and map wayfinding, scored against a timer",
+  detailedDescription: `The Compass Navigation Simulation is a VR training experience built to develop map-and-compass wayfinding skills. Users are dropped at a starting point in an open environment and must reach a marked destination shown on their map, relying on their compass heading and terrain reading rather than any guided path or waypoint arrows.
+
+  At the start of each session, users configure the time of day, choosing between day and night lighting conditions, which dynamically updates the environment's lighting and visibility to change the difficulty and feel of the navigation challenge.
+
+  Progress is timed from the moment the session starts, and the elapsed time is presented as the score once the user reaches the endpoint, encouraging users to improve their navigation efficiency across attempts.`,
+  keyFeatures: [
+    "Map and compass-based navigation",
+    "Start and end points plotted on an in-VR map",
+    "Dynamic weather and configurable day time system",
+    "Timer-based scoring recorded on reaching the destination",
+    "Open environment designed to test spatial orientation and bearing accuracy",
+  ],
+  technologies: [
+    "Unity",
+    "C#",
+    "Meta XR All-in-One SDK",
+    "UI/UX for Virtual Reality",
+  ],
+  images: [],
+  videos: [],
+  isBlog: false,
+},
+  
   {
   id: "Maritime-Training-Simulation",
   title: "Maritime Training Simulation",
@@ -124,6 +189,7 @@ export const projectsData = [
   videos: [],
   isBlog: false,
 },
+
   {
   id: "Fruithalla",
   title: "FRUITHALLA",
