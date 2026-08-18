@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2b1a10"/>
+      <stop offset="100%" stop-color="#4a2c14"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#e0a458" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#e0a458" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bg)"/>
+  <circle cx="400" cy="225" r="220" fill="url(#glow)"/>
+
+  <!-- dashed route between start and end -->
+  <path d="M 170 320 Q 350 200 610 130" fill="none" stroke="#e0a458" stroke-width="3" stroke-dasharray="10 10" opacity="0.8"/>
+
+  <!-- start point -->
+  <circle cx="170" cy="320" r="10" fill="#ffffff"/>
+  <circle cx="170" cy="320" r="18" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.5"/>
+  <text x="170" y="355" fill="#ffffff" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" opacity="0.85">START</text>
+
+  <!-- end point -->
+  <circle cx="610" cy="130" r="10" fill="#e0a458"/>
+  <circle cx="610" cy="130" r="18" fill="none" stroke="#e0a458" stroke-width="2" opacity="0.6"/>
+  <text x="610" y="105" fill="#e0a458" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" opacity="0.9">END</text>
+
+  <!-- compass -->
+  <g transform="translate(400,225)">
+    <circle r="70" fill="#3a2515" stroke="#e0a458" stroke-width="3"/>
+    <circle r="55" fill="none" stroke="#e0a458" stroke-width="1" opacity="0.5"/>
+    <line x1="0" y1="-70" x2="0" y2="-58" stroke="#ffffff" stroke-width="2"/>
+    <line x1="0" y1="70" x2="0" y2="58" stroke="#ffffff" stroke-width="2" opacity="0.6"/>
+    <line x1="-70" y1="0" x2="-58" y2="0" stroke="#ffffff" stroke-width="2" opacity="0.6"/>
+    <line x1="70" y1="0" x2="58" y2="0" stroke="#ffffff" stroke-width="2" opacity="0.6"/>
+    <polygon points="0,-45 12,10 0,-4 -12,10" fill="#e0a458"/>
+    <text x="0" y="-82" fill="#ffffff" font-family="Arial, sans-serif" font-size="14" text-anchor="middle">N</text>
+  </g>
+
+  <text x="400" y="415" fill="#ffffff" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" font-weight="bold" opacity="0.9">Compass Navigation Simulation</text>
+</svg>
