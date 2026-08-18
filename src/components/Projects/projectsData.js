@@ -5,12 +5,7 @@ import VRCMopping from "../../Assets/Projects/VRC/Mopping.png";
 import VRCHandCleaing from "../../Assets/Projects/VRC/hand hygene.jpg";
 import VRCVideo from "../../Assets/Projects/VRC/video.mp4";
 //DXB
-import DXBIntroImage from "../../Assets/Projects/DXB/DXBIntroImage.png"
-import DXBVR1 from "../../Assets/Projects/DXB/DXBVR1.png"
-import DXBVR2 from "../../Assets/Projects/DXB/DXBVR2.png"
-import DXBPC1 from "../../Assets/Projects/DXB/DXBPC1.png"
-import DXBPC2 from "../../Assets/Projects/DXB/DXBPC2.png"
-import DXBVideo from "../../Assets/Projects/DXB/video.mp4"
+import DXBIntroImage from "../../Assets/Projects/DXB/intro.png"
 // Spring's Resturant
 import SpringsIntroImage from "../../Assets/Projects/Spring's Resturant/intro.png"
 import Springs1 from "../../Assets/Projects/Spring's Resturant/inside1.png"
@@ -260,7 +255,7 @@ export const projectsData = [
     "UI/UX Design",
     "Digital Twin Architecture"
   ],
-  images: [DXBIntroImage, DXBVR2],
+  images: [],
   videos: [],
   isBlog: false,
 },
