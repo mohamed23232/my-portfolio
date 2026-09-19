@@ -5,7 +5,7 @@ import VRCMopping from "../../Assets/Projects/VRC/Mopping.png";
 import VRCHandCleaing from "../../Assets/Projects/VRC/hand hygene.jpg";
 import VRCVideo from "../../Assets/Projects/VRC/video.mp4";
 //DXB
-import DXBIntroImage from "../../Assets/Projects/DXB/intro.png"
+import DXBIntroImage from "../../Assets/Projects/DXB/DXBIntroImage.png"
 // Spring's Resturant
 import SpringsIntroImage from "../../Assets/Projects/Spring's Resturant/intro.png"
 import Springs1 from "../../Assets/Projects/Spring's Resturant/inside1.png"
@@ -22,7 +22,6 @@ import Chess4 from "../../Assets/Projects/Ai Chess Engine/img4.png"
 import GameStoryImage from "../../Assets/Projects/Fruithalla/Story.png"
 import GameplayVideo from "../../Assets/Projects/Fruithalla/Gameplay2.mp4"
 import GameplayImage1 from "../../Assets/Projects/Fruithalla/Gameplay1.png"
-import GameplayImage2 from "../../Assets/Projects/Fruithalla/Gameplay2.png"
 import LevelsImage from "../../Assets/Projects/Fruithalla/Levels.png"
 import MainMenuImage from "../../Assets/Projects/Fruithalla/MainMenu.png"
 // EMS
@@ -57,6 +56,11 @@ import RozBlabanIntro from "../../Assets/Projects/Roz Blaban/intro.png"
 import RozBlabanAwake from "../../Assets/Projects/Roz Blaban/AwakeMode.png"
 import RozBlabanSleep from "../../Assets/Projects/Roz Blaban/SleepMode.png"
 
+// Ba: Your Spirit Guide
+import YSGLogo from "../../Assets/Projects/Ba Your Spirit Guide/logo.png"
+import YSGCharacter from "../../Assets/Projects/Ba Your Spirit Guide/character.png"
+import YSGEgyptCard from "../../Assets/Projects/Ba Your Spirit Guide/egypt-card.png"
+
 
 
 
@@ -88,7 +92,36 @@ export const projectsData = [
   images: [RozBlabanAwake, RozBlabanSleep],
   videos: [],
   isBlog: false,
-},  
+},  {
+  id: "ba-your-spirit-guide",
+  title: "Ba: Your Spirit Guide",
+  imgPath: YSGLogo,
+  description: "A GPS-powered adventure game where a friendly spirit guide leads you through real Egyptian landmarks, sharing stories and rewarding your journey along the way.",
+  shortDescription: "A story-driven journey through Egypt, guided by a friendly spirit",
+  detailedDescription: `Ba: Your Spirit Guide turns exploring Egypt into a real-world storytelling adventure. As you walk up to an actual landmark, like Alexandria or the Pyramids, your phone recognizes where you are and brings your spirit guide Ba to life to greet you with a story about that place.
+
+  From there, a simple in-game compass leads you to nearby points of interest, where you can snap AR-filtered souvenir photos and earn rewards. Every place you visit and every reward you collect is saved to a personal digital passport, turning your trip through Egypt into a keepsake you can look back on.`,
+  keyFeatures: [
+    "Real-world GPS geofencing that triggers narrative dialogue on physical arrival at a landmark",
+    "Ink-driven interactive dialogue via ink-unity-integration",
+    "Compass-guided AR navigation between points of interest within a location",
+    "AR filter camera that composites decorative overlays into souvenir photos",
+    "Randomized per-session reward system tied to sub-location discovery",
+    "Persistent digital passport tracking visited locations, stamps, and earned rewards",
+    "Data-driven location architecture using ScriptableObjects for locations, sub-locations, and dialogue knots",
+    "In-editor and on-device GPS simulator for testing without physically traveling to a site",
+  ],
+  technologies: [
+    "Unity (URP)",
+    "C#",
+    "Ink / ink-unity-integration",
+    "Unity LocationService (GPS)",
+    "AR Camera Compositing",
+  ],
+  images: [YSGCharacter, YSGEgyptCard],
+  videos: [],
+  isBlog: false,
+},
   {
   id: "compass-navigation-simulation",
   title: "Compass Navigation Simulation",
