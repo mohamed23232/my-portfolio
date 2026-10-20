@@ -74,6 +74,7 @@ export const projectsData = [
   {
   id: "time-will-tell",
   title: "Time Will Tell",
+  category: "game",
   imgPath: TWTIntro,
   description: "A 3D detective game where you work a shop's returns desk. Use a wormhole-powered device to see each returned item's past, and catch customers lying about how it broke.",
   shortDescription: "Every item has a past. A solo game jam detective game built in 3 days for the theme \"Rewind\"",
@@ -104,6 +105,7 @@ export const projectsData = [
 },  {
   id: "roz-blaban",
   title: "Roz Blaban",
+  category: "game",
   imgPath: RozBlabanIntro,
   description: "A 2D puzzle platformer following Sarhan, an anxious university student who must cross a dreamlike cityscape to get home to bed by switching between awake and asleep states.",
   shortDescription: "2D puzzle platformer where switching between awake and asleep reveals different paths",
@@ -131,6 +133,7 @@ export const projectsData = [
 },  {
   id: "ba-your-spirit-guide",
   title: "Ba: Your Spirit Guide",
+  category: "mobile",
   imgPath: YSGLogo,
   description: "A GPS-powered adventure game where a friendly spirit guide leads you through real Egyptian landmarks, sharing stories and rewarding your journey along the way.",
   shortDescription: "A story-driven journey through Egypt, guided by a friendly spirit",
@@ -161,6 +164,7 @@ export const projectsData = [
   {
   id: "compass-navigation-simulation",
   title: "Compass Navigation Simulation",
+  category: "vr",
   imgPath: CompassIntroImage,
   description: "A VR wayfinding simulation where users navigate from a starting point to a destination using only a physical compass and a map.",
   shortDescription: "VR navigation trainer using compass and map wayfinding, scored against a timer",
@@ -190,6 +194,7 @@ export const projectsData = [
   {
   id: "Maritime-Training-Simulation",
   title: "Maritime Training Simulation",
+  category: "vr",
   imgPath: ShipIntroImage,
   description: "A real-time ship simulation platform designed for immersive training and interactive scenario-based experiences.",
   shortDescription: "Real-time maritime training simulator with VR and PC support",
@@ -220,6 +225,7 @@ export const projectsData = [
  {
   id: "crisis-simulation",
   title: "Crisis Simulation",
+  category: "vr",
   imgPath: CrisisIntroImage,
   description: "A VR platform for immersive crisis scenario training with guided emergency procedures and interactive walkthroughs.",
   shortDescription: "VR-based crisis scenario training with guided emergency response procedures",
@@ -257,6 +263,7 @@ export const projectsData = [
   {
   id: "Fruithalla",
   title: "FRUITHALLA",
+  category: "game",
   imgPath: MainMenuImage,
   description: "An intense single-player wave-based survival shooter where you fight against relentless enemy waves across multiple challenging levels.",
   shortDescription: "Single-player wave-based survival shooter with strategic combat and progression",
@@ -297,6 +304,7 @@ export const projectsData = [
 {
   id: "infrastructure-digital-twin",
   title: "Infrastructure Digital Twin",
+  category: "vr",
   imgPath: DXBIntroImage,
   description: "An immersive VR and PC-based digital twin designed for interactive exploration, spatial inspection, and real-time information visualization of large-scale infrastructure.",
   shortDescription: "Interactive digital twin for VR and PC with touch-screen support",
@@ -331,6 +339,7 @@ export const projectsData = [
   {
     id: "sterile-environment-training",
     title: "Sterile Environment VR Training",
+    category: "vr",
     imgPath: VRCIntroImage,
     description: "An innovative VR training platform designed for sterile environment protocol training through immersive, hands-on simulations.",
     shortDescription: "VR-based training system for sterile procedure protocols",
@@ -357,6 +366,7 @@ export const projectsData = [
   {
   id: "explainable-thoracic-diagnosis",
   title: "XAI for Thoracic Diagnosis",
+  category: "software",
   imgPath: CXRIntroImage,
   description: "An explainable AI-based diagnostic system for thoracic disease detection from chest X-rays using Vision Transformers and state-of-the-art XAI techniques.",
   shortDescription: "Explainable Vision Transformer system for chest X-ray diagnosis",
@@ -397,6 +407,7 @@ export const projectsData = [
   {
   id: "ai-chess-engine",
   title: "AI Chess Engine",
+  category: "software",
   imgPath: ChessIntroImage,
   description: "A customizable AI-powered chess engine built with Java, applying OOP best practices and a Minimax-based decision-making system.",
   shortDescription: "Java-based AI chess engine using Minimax",
@@ -430,6 +441,7 @@ export const projectsData = [
 {
   id: "educational-management-system",
   title: "Educational Management System",
+  category: "software",
   imgPath: EMSIntroImage,
   description: "A full-stack educational management system built with Node.js following the MVC architecture, designed to manage users, subjects, assignments, and submissions.",
   shortDescription: "MVC-based educational management system using Node.js",
@@ -466,6 +478,7 @@ export const projectsData = [
 {
   id: "xo-arm-tiva-c",
   title: "XO–ARM Game",
+  category: "software",
   imgPath: XOIntroImage,
   description: "A hardware-based Tic-Tac-Toe game implemented on a Tiva C ARM microcontroller with custom-built drivers and real-time hardware interaction.",
   shortDescription: "Embedded XO (Tic-Tac-Toe) game on ARM Tiva C",
@@ -502,6 +515,7 @@ export const projectsData = [
 {
   id: "springs-restaurant",
   title: "Spring’s Restaurant",
+  category: "software",
   imgPath: SpringsIntroImage,
   description: "A modern, animated restaurant website designed to deliver a smooth food ordering and browsing experience with a strong visual identity.",
   shortDescription: "Modern restaurant website with online ordering and animations",
