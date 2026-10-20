@@ -61,11 +61,47 @@ import YSGLogo from "../../Assets/Projects/Ba Your Spirit Guide/logo.png"
 import YSGCharacter from "../../Assets/Projects/Ba Your Spirit Guide/character.png"
 import YSGEgyptCard from "../../Assets/Projects/Ba Your Spirit Guide/egypt-card.png"
 
+// Time Will Tell
+import TWTIntro from "../../Assets/Projects/Time Will Tell/GameIntro.png"
+import TWTHowToPlay from "../../Assets/Projects/Time Will Tell/GameHowToPlay.png"
+import TWTGameplay from "../../Assets/Projects/Time Will Tell/GamePlay.png"
+// TODO: add gameplay screenshots here and to the images array below
+
 
 
 
 export const projectsData = [
   {
+  id: "time-will-tell",
+  title: "Time Will Tell",
+  imgPath: TWTIntro,
+  description: "A 3D detective game where you work a shop's returns desk. Use a wormhole-powered device to see each returned item's past, and catch customers lying about how it broke.",
+  shortDescription: "Every item has a past. A solo game jam detective game built in 3 days for the theme \"Rewind\"",
+  detailedDescription: `Time Will Tell is a solo game jam project built in 3 days for the theme "Rewind". The player works the returns counter of a small shop. Each customer brings back a broken item with a story, and the player uses a device that bends light through a wormhole to view the item at four points in its history: the day of sale, 3, 6 and 9 months later. By comparing the item on the desk, its past and the customer's claim, the player decides whether to accept or refuse the return. Three wrong calls and you're fired.
+
+  The game has 10 hand-crafted cases, from easy jokes to tricky twists, such as a "crack" that turns out to be on the protective film, or a candle that never had a wick.
+
+  As the solo developer, I handled the game design, programming, UI, level setup and audio integration. The game is structured around data-driven cases so new content can be added without code, and it was scoped, planned and shipped as a complete game within the 3-day jam.`,
+  keyFeatures: [
+    "Inspect items in 3D: pick up, rotate and zoom",
+    "A timeline system that shows each item's history through layered model states",
+    "A rendered \"past view\" on an in-game monitor",
+    "10 cases with an accept/refuse judgment, a strike system, and win and lose screens",
+    "A full UI in Unity UI Toolkit",
+    "Themed audio, custom cursors and a custom logo",
+  ],
+  technologies: [
+    "Unity",
+    "C#",
+    "UI Toolkit",
+    "Render Textures & Multiple Cameras",
+    "Data-Driven Design",
+    "Blender",
+  ],
+  images: [TWTHowToPlay, TWTGameplay],
+  videos: [],
+  isBlog: false,
+},  {
   id: "roz-blaban",
   title: "Roz Blaban",
   imgPath: RozBlabanIntro,
