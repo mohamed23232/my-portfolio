@@ -35,6 +35,28 @@
   transform: translateX(-5px);
 }
 
+.play-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  background: #c770f0;
+  border: 2px solid #c770f0;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.play-button:hover {
+  background: transparent;
+  color: #c770f0;
+  transform: translateY(-2px);
+}
+
 .back-button {
   display: inline-flex;
   align-items: center;

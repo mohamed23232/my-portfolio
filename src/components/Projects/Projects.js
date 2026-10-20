@@ -85,6 +85,7 @@ function Projects() {
                       isBlog={project.isBlog}
                       title={project.title}
                       description={project.description}
+                      playLink={project.playLink}
                     />
                   </Col>
                 ))}

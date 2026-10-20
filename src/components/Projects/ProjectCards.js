@@ -4,6 +4,7 @@ import Button from "react-bootstrap/Button";
 import { useNavigate } from "react-router-dom";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
+import { FaItchIo } from "react-icons/fa";
 
 function ProjectCards(props) {
   const navigate = useNavigate();
@@ -23,6 +24,17 @@ function ProjectCards(props) {
         <Button variant="primary" onClick={handleViewDetails}>
           View Details
         </Button>
+        {props.playLink && (
+          <Button
+            variant="primary"
+            href={props.playLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ marginLeft: "10px" }}
+          >
+            <FaItchIo /> &nbsp;Play
+          </Button>
+        )}
       </Card.Body>
     </Card>
   );

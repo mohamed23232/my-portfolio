@@ -3,7 +3,6 @@ import VRCIntroImage from "../../Assets/Projects/VRC/Intro.jpg";
 import VRCCleaing from "../../Assets/Projects/VRC/Cleaning.png";
 import VRCMopping from "../../Assets/Projects/VRC/Mopping.png";
 import VRCHandCleaing from "../../Assets/Projects/VRC/hand hygene.jpg";
-import VRCVideo from "../../Assets/Projects/VRC/video.mp4";
 //DXB
 import DXBIntroImage from "../../Assets/Projects/DXB/DXBIntroImage.png"
 // Spring's Resturant
@@ -65,7 +64,6 @@ import YSGEgyptCard from "../../Assets/Projects/Ba Your Spirit Guide/egypt-card.
 import TWTIntro from "../../Assets/Projects/Time Will Tell/GameIntro.png"
 import TWTHowToPlay from "../../Assets/Projects/Time Will Tell/GameHowToPlay.png"
 import TWTGameplay from "../../Assets/Projects/Time Will Tell/GamePlay.png"
-// TODO: add gameplay screenshots here and to the images array below
 
 
 
@@ -75,6 +73,7 @@ export const projectsData = [
   id: "time-will-tell",
   title: "Time Will Tell",
   category: "game",
+  playLink: "https://engmor.itch.io/time-will-tell",
   imgPath: TWTIntro,
   description: "A 3D detective game where you work a shop's returns desk. Use a wormhole-powered device to see each returned item's past, and catch customers lying about how it broke.",
   shortDescription: "Every item has a past. A solo game jam detective game built in 3 days for the theme \"Rewind\"",
@@ -106,6 +105,7 @@ export const projectsData = [
   id: "roz-blaban",
   title: "Roz Blaban",
   category: "game",
+  playLink: "https://emaaaw.itch.io/rozblaban",
   imgPath: RozBlabanIntro,
   description: "A 2D puzzle platformer following Sarhan, an anxious university student who must cross a dreamlike cityscape to get home to bed by switching between awake and asleep states.",
   shortDescription: "2D puzzle platformer where switching between awake and asleep reveals different paths",
@@ -264,6 +264,7 @@ export const projectsData = [
   id: "Fruithalla",
   title: "FRUITHALLA",
   category: "game",
+  playLink: "https://engmor.itch.io/fruithalla",
   imgPath: MainMenuImage,
   description: "An intense single-player wave-based survival shooter where you fight against relentless enemy waves across multiple challenging levels.",
   shortDescription: "Single-player wave-based survival shooter with strategic combat and progression",
@@ -360,7 +361,7 @@ export const projectsData = [
     ],
     technologies: ["Virtual Reality", "Unity", "C#", "VR Interactions", "Custom Training Systems", "Hand Tracking"],
     images: [VRCIntroImage, VRCCleaing,VRCMopping,VRCHandCleaing],
-    videos: [VRCVideo],
+    videos: [],
     isBlog: false,
   },
   {

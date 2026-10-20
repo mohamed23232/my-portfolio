@@ -7,6 +7,7 @@ import Particle from "../Particle";
 import { BsGithub } from "react-icons/bs";
 import { CgWebsite } from "react-icons/cg";
 import { MdArrowBack } from "react-icons/md";
+import { FaItchIo } from "react-icons/fa";
 import "./ProjectDetail.css";
 
 function ProjectDetail() {
@@ -43,6 +44,16 @@ function ProjectDetail() {
           <Col lg={8}>
             <h1 className="project-detail-title">{project.title}</h1>
             <p className="project-detail-short-desc">{project.shortDescription}</p>
+            {project.playLink && (
+              <a
+                href={project.playLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="play-button"
+              >
+                <FaItchIo /> Play on itch.io
+              </a>
+            )}
           </Col>
         </Row>
 
