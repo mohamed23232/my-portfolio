@@ -610,15 +610,15 @@ button:focus {
 @media (max-width: 767px) {
   .project-category-nav {
     top: 95px;
-    flex-wrap: nowrap;
     width: 100%;
-    gap: 3px;
-    padding: 6px 5px;
+    gap: 6px;
+    padding: 8px;
+    border-radius: 24px;
   }
 
   .project-category-pill {
     gap: 4px;
-    padding: 5px 6px;
+    padding: 5px 12px;
     white-space: nowrap;
     font-size: 0.85em;
   }
