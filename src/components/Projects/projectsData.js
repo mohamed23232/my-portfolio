@@ -3,6 +3,7 @@ import VRCIntroImage from "../../Assets/Projects/VRC/Intro.jpg";
 import VRCCleaing from "../../Assets/Projects/VRC/Cleaning.png";
 import VRCMopping from "../../Assets/Projects/VRC/Mopping.png";
 import VRCHandCleaing from "../../Assets/Projects/VRC/hand hygene.jpg";
+import VRCVideo from "../../Assets/Projects/VRC/video.mp4";
 //DXB
 import DXBIntroImage from "../../Assets/Projects/DXB/DXBIntroImage.png"
 // Spring's Resturant
@@ -23,6 +24,7 @@ import GameplayVideo from "../../Assets/Projects/Fruithalla/Gameplay2.mp4"
 import GameplayImage1 from "../../Assets/Projects/Fruithalla/Gameplay1.png"
 import LevelsImage from "../../Assets/Projects/Fruithalla/Levels.png"
 import MainMenuImage from "../../Assets/Projects/Fruithalla/MainMenu.png"
+import FruithallaCover from "../../Assets/Projects/Fruithalla/Cover.png"
 // EMS
 import EMSIntroImage from "../../Assets/Projects/EMS/intro.png"
 import EMS1 from "../../Assets/Projects/EMS/1.png"
@@ -65,10 +67,48 @@ import TWTIntro from "../../Assets/Projects/Time Will Tell/GameIntro.png"
 import TWTHowToPlay from "../../Assets/Projects/Time Will Tell/GameHowToPlay.png"
 import TWTGameplay from "../../Assets/Projects/Time Will Tell/GamePlay.png"
 
+// Scraping System
+import ScrapingIntro from "../../Assets/Projects/Scraping System/intro.png"
+import ScrapingOverview from "../../Assets/Projects/Scraping System/overview.png"
+import ScrapingResult from "../../Assets/Projects/Scraping System/result.png"
 
 
 
 export const projectsData = [
+  {
+  id: "scraping-system",
+  title: "Scraping System",
+  category: "system",
+  imgPath: ScrapingIntro,
+  description: "A configuration-driven web scraping system. Describe a website once in a visual admin app, then fetch its data as structured JSON by name from Unity or any other client.",
+  shortDescription: "Turn any website into structured JSON, with no per-website code",
+  detailedDescription: `Scraping System is a configuration-driven web scraping platform. Instead of writing scraping code for every website, you describe a site once as a saved config: where its data lives and what to extract. Any client (the desktop admin app, a Unity game, a script or a web app) can then request that config by id and get back clean, structured JSON.
+
+  The system ships as a Windows desktop app that starts the backend automatically, with no terminal or Node.js install required. Its Admin UI lets you build configs visually: pick an item selector for a repeating list, add named fields with extraction rules, chain cleanup transforms, test the scrape live against the real page, and save it once the results look right.
+
+  It handles both static pages and JavaScript-rendered sites through a headless browser mode, supports pagination with clear stop reasons, in-memory caching, async jobs for slow scrapes, and structured error codes that point to the exact field or selector that failed.`,
+  keyFeatures: [
+    "Visual Admin UI to build, test and save scraping configs without code",
+    "Item + Fields extraction with text, HTML and attribute extraction, multi-match and required/default rules",
+    "Chainable transforms: trim, removeCurrency, parseNumber, absoluteUrl, regex, replace and default",
+    "Static HTML mode plus a headless browser mode for JavaScript-rendered pages",
+    "Pagination with page, item and duration limits, reporting why each run stopped",
+    "In-memory result caching with TTL and async jobs with polling",
+    "HTTP API with saved-config CRUD, optional admin API key and SSRF protection on target URLs",
+    "Pluggable config storage: JSON files or SQLite",
+  ],
+  technologies: [
+    "Node.js",
+    "REST API",
+    "SQLite",
+    "C#",
+    "Unity",
+    "Newtonsoft.Json",
+  ],
+  images: [ScrapingOverview, ScrapingResult],
+  videos: [],
+  isBlog: false,
+},
   {
   id: "time-will-tell",
   title: "Time Will Tell",
@@ -265,7 +305,7 @@ export const projectsData = [
   title: "FRUITHALLA",
   category: "game",
   playLink: "https://engmor.itch.io/fruithalla",
-  imgPath: MainMenuImage,
+  imgPath: FruithallaCover,
   description: "An intense single-player wave-based survival shooter where you fight against relentless enemy waves across multiple challenging levels.",
   shortDescription: "Single-player wave-based survival shooter with strategic combat and progression",
   detailedDescription: `Fruithalla is an action-packed single-player survival experience that challenges players to withstand increasingly difficult waves of enemies across multiple combat arenas.
@@ -361,7 +401,7 @@ export const projectsData = [
     ],
     technologies: ["Virtual Reality", "Unity", "C#", "VR Interactions", "Custom Training Systems", "Hand Tracking"],
     images: [VRCIntroImage, VRCCleaing,VRCMopping,VRCHandCleaing],
-    videos: [],
+    videos: [VRCVideo],
     isBlog: false,
   },
   {

@@ -9,6 +9,7 @@ const sections = [
   { category: "vr", title: "VR", label: "VR" },
   { category: "mobile", title: "Mobile", label: "Mobile" },
   { category: "software", title: "Software", label: "Software" },
+  { category: "system", title: "System", label: "Systems" },
 ];
 
 function Projects() {
